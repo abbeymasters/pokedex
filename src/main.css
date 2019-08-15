@@ -31,15 +31,29 @@ header img {
 
 .sidebar {
     margin-top: 100px;
+    margin-bottom: 50px;
     text-align: center;
+}
+
+.sidebar h2 {
+    font-family: Nunito;
+    color: #ee5a31;
 }
 
 input {
     width: 150px;
+    border: 1px solid #ee5a31;
+    height: 20px;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 select {
     width: 157px;
+    border: 1px solid #ee5a31;
+    height: 20px;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 /* found on https://ianlunn.github.io/Hover/ */
@@ -163,6 +177,10 @@ li {
     margin-bottom: 10px;
 }
 
+li:hover {
+    box-shadow: 10px 10px 5px#ff835a;
+}
+
 li img {
     width: 150px;
 }
@@ -206,3 +224,6 @@ footer p{
     color: #ff835a;
 }
 
+#next-button:hover {
+    box-shadow: 10px 10px 5px#ff835a;
+}
