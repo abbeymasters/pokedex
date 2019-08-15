@@ -1,0 +1,39 @@
+/*  setting up grid-areas */
+
+.header         {grid-area: header;}
+.sidebar        {grid-area: sidebar;}
+.content        {grid-area: content;}
+.next-button    {grid-area: button;} 
+
+.wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+        "header"
+        "sidebar"
+        "content"
+        "button";
+}
+
+@media (mid-width: 500px) {
+    .wrapper {
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "header"
+        "sidebar"
+        "content"
+        "button";
+    }
+}
+
+@media (min-width: 700px) {
+    .wrapper {
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: 
+        "header header"
+        "sidebar content"
+        "sidebar button";
+    }
+}
