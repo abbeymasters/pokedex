@@ -14,7 +14,8 @@ class App extends Component {
 
         const pokeList = new PokeList({ poke: [] });
         const pokeListDOM = pokeList.renderDOM();
-        const contentSection = dom.querySelector('.pokemon-list-section');
+        const contentSection = dom.querySelector('.content');
+        
         contentSection.appendChild(pokeListDOM);
 
     }
@@ -32,7 +33,10 @@ class App extends Component {
                     
                     <section class="content"></section>
                     
-                    <section class="button-section"></section>
+                    <section class="button-section">
+                        <button class="button" id="next-button">next page</button>
+                        <button class="button" id="back-button">last page</button>
+                    </section>
                 </main>
                 <footer>
                     <p>made by abbey</p>

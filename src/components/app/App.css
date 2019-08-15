@@ -17,7 +17,7 @@
         "button";
 }
 
-@media (mid-width: 500px) {
+@media (mid-width: 480px) {
     .wrapper {
         grid-template-columns: 100%;
         grid-template-areas:

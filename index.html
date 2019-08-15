@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" href="src/components/app/App.css">
     <link rel="stylesheet" type="text/css" href="src/components/options/Select.css">
     <link rel="stylesheet" type="text/css" href="src/components/options/Input.css">
-    <link rel="stylesheet" type="text/css" href="src/components/app/Button.css">
     <link rel="stylesheet" type="text/css" href="src/components/pokedex/PokeItems.css">
     <link rel="stylesheet" type="text/css" href="src/components/pokedex/PokeList.css">
     <title>Pokedex</title>
@@ -17,10 +16,6 @@
 <body>
     <div id="root">
         <main class="wrapper">
-            <header class="header">
-                    <h1>pokedex</h1>
-                    <img src="./assets/chansey.png">
-            </header>
 
             <section class="sidebar">
                 <div id="input-section">
@@ -75,11 +70,13 @@
             </section>
             <section class="button-section">
                 <button class="button" id="next-button">next page</button>
+                <button class="button" id="back-button">last page</button>
             </section>
         </main>
         <footer>
             <p>made by abbey</p>
         </footer>
     </div>
+    <script src="src/index.js" type="module"></script>
 </body>
 </html>
