@@ -13,7 +13,6 @@ class App extends Component {
         dom.prepend(headerDOM);
 
         const pokeList = new PokeList({ poke: [] });
-        console.log(pokeList);
         const pokeListDOM = pokeList.renderDOM();
         const contentSection = dom.querySelector('.pokemon-list-section');
         contentSection.appendChild(pokeListDOM);
