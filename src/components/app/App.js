@@ -32,6 +32,10 @@ class App extends Component {
                     </section>
                     
                     <section class="content"></section>
+
+                    <section class="image-section">
+                        <img class="gif" src="assets/GrayBountifulBlackpanther-small.gif">
+                    </section>
                     
                     <section class="button-section">
                         <button class="button" id="next-button">next page</button>

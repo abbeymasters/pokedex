@@ -24,6 +24,7 @@ footer p{
 
 .button-section {
     text-align: center;
+    margin-top: 75px;
 }
 
 #next-button, #back-button {
@@ -40,4 +41,9 @@ footer p{
 
 #next-button:hover , #back-button:hover {
     box-shadow: 10px 10px 5px#ff835a;
+}
+
+.gif {
+    width: 200px;
+    margin-left: 100px;
 }
