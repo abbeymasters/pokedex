@@ -4,7 +4,7 @@ import Header from '../app/Header.js';
 // import Input from '../options/Input.js';
 // import Select from '../options/Select.js';
 import PokeList from '../pokedex/PokeList.js';
-import poke from '../../../data.js';
+// import poke from '../../../data.js';
 
 class App extends Component {
     onRender(dom) {
