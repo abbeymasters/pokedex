@@ -33,7 +33,7 @@ class Paging extends Component {
 
         if(!totalCount) {
             return /*html*/`
-            <p class="paging">No results, try another search!</p>
+            <p class="paging">You found no results, try another search!</p>
             `;
         }
     

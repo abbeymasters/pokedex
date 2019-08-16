@@ -44,6 +44,7 @@ class App extends Component {
                     });
                 });
         }
+        
         loadPokemon();
 
         window.addEventListener('hashchange', () => {
@@ -61,16 +62,14 @@ class App extends Component {
                     
                     <section class="content"></section>
 
-                    <section class="image-section">
-                        <img class="gif" src="assets/GrayBountifulBlackpanther-small.gif">
-                    </section>
+                    <section class="image-section"><img class="gif" src="assets/GrayBountifulBlackpanther-small.gif"></section>
                     
                     <section class="button-section"></section>
 
                 </main>
-                <footer>
-                    <p>made by abbey</p>
-                </footer>
+                
+                <footer><p>made by abbey</p></footer>
+                
             </div>
         `;
     }
