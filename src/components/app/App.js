@@ -18,7 +18,7 @@ class App extends Component {
         const input = new Input();
         const inputDOM = input.renderDOM();
         selectSection.appendChild(inputDOM);
-        
+
         const url = 'https://alchemy-pokedex.herokuapp.com/api/pokedex';
         fetch(url)
             .then(response => response.json())
