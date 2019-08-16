@@ -2,8 +2,9 @@ import Component from '../Component.js';
 import Header from '../app/Header.js';
 // import Button from '../app/Button.js';
 // import Input from '../options/Input.js';
-// import Select from '../options/Select.js';
+import Select from '../options/Select.js';
 import PokeList from '../pokedex/PokeList.js';
+import Input from '../options/Input.js';
 
 class App extends Component {
     onRender(dom) {
@@ -11,7 +12,15 @@ class App extends Component {
         const headerDOM = header.renderDOM();
         dom.prepend(headerDOM);
 
+        const select = new Select();
+        const selectDOM = select.renderDOM();
+        const selectSection = dom.querySelector('.sidebar');
+        selectSection.appendChild(selectDOM);
 
+        const input = new Input();
+        const inputDOM = input.renderDOM();
+        selectSection.appendChild(inputDOM);
+        
         const url = 'https://alchemy-pokedex.herokuapp.com/api/pokedex';
         fetch(url)
             .then(response => response.json())
@@ -23,16 +32,13 @@ class App extends Component {
             });
     }
 
-    
     renderHTML() {
         return /*html*/`
             <div id="root">
                 <main class="wrapper">
-                    <header class="header"></header>
+                    
 
                     <section class="sidebar">
-                        <div id="input-section"></div>
-                        <div id="select-section"></div>
                     </section>
                     
                     <section class="content"></section>
