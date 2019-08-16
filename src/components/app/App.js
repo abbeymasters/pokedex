@@ -4,7 +4,6 @@ import Header from '../app/Header.js';
 // import Input from '../options/Input.js';
 // import Select from '../options/Select.js';
 import PokeList from '../pokedex/PokeList.js';
-// import poke from '../../../data.js';
 
 class App extends Component {
     onRender(dom) {
@@ -12,14 +11,19 @@ class App extends Component {
         const headerDOM = header.renderDOM();
         dom.prepend(headerDOM);
 
-        const pokeList = new PokeList({ poke: [] });
-        const pokeListDOM = pokeList.renderDOM();
-        const contentSection = dom.querySelector('.content');
-        
-        contentSection.appendChild(pokeListDOM);
 
+        const url = 'https://alchemy-pokedex.herokuapp.com/api/pokedex';
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                let pokeList = new PokeList({ poke: data });
+                let pokeListDOM = pokeList.renderDOM();
+                const contentSection = dom.querySelector('.content');
+                contentSection.appendChild(pokeListDOM);
+            });
     }
 
+    
     renderHTML() {
         return /*html*/`
             <div id="root">

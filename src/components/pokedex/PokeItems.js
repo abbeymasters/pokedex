@@ -7,7 +7,7 @@ class PokeItem extends Component {
         return /*html*/`
             <li>
                 <h2>${poke.pokemon}</h2>
-                <img id="poke-image" src="${poke.url_image}">
+                <img id="${poke.id}" src="${poke.url_image}">
                 <p>Type: ${poke.type_1}</p>
                 <p>Attack: ${poke.attack}</p>
             </li>

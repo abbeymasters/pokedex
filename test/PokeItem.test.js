@@ -9,6 +9,7 @@ test('Render a pokemon', assert => {
     const poke = {
         pokemon: 'chansey',
         type_1: 'normal',
+        id: 3,
         attack: 5,
         url_image: 'http://assets.pokemon.com/assets/cms2/img/pokedex/full/113.png',
     };
@@ -16,7 +17,7 @@ test('Render a pokemon', assert => {
     const expected = /*html*/`
             <li>
                 <h2>chansey</h2>
-                <img id="poke-image" src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/113.png">
+                <img id="3" src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/113.png">
                 <p>Type: normal</p>
                 <p>Attack: 5</p>
             </li>
