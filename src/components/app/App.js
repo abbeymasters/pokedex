@@ -1,7 +1,5 @@
 import Component from '../Component.js';
 import Header from '../app/Header.js';
-// import Button from '../app/Button.js';
-// import Input from '../options/Input.js';
 import Select from '../options/Select.js';
 import PokeList from '../pokedex/PokeList.js';
 import Input from '../options/Input.js';
