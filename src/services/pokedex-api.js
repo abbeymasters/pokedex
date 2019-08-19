@@ -9,11 +9,5 @@ export function getPokemon(options) {
 
     return fetch(url)
         .then(response => response.json());
-        // .then(results => {
-        //     return {
-        //         count: 100 * page,
-        //         results: results
-        //     };
-        // });
 }
 
